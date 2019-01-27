@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Four Horsemen</title>
+</head>
+<body>
+  <main class="mane" tabindex="0">
+    <div class="container">
+      <br>
+      <button class="btn modal-btn" data-trigger="first">
+        first modal
+      </button>
+
+      <button class="btn modal-btn" data-trigger="second">
+        second modal
+      </button>
+      <button class="btn modal-btn" data-trigger="third">
+        third modal
+      </button>
+      <button class="btn modal-btn" data-trigger="fourth">
+        fourth modal
+      </button>
+    </div>
+  </main>
+  <div class="container">
+    <div 
+      id="first"
+      class="modal"
+      aria-modal="true"
+      aria-hidden="true"  
+      role="dialog"
+      aria-labelledby="firstTitle"
+      aria-describedby="firstDesc"
+      data-modal="first"
+      >
+      <div class="modal-content">
+        <div id="firstTitle">
+          <h3>first Title</h3>
+        </div>
+        <div id="firstDesc">
+          <form>
+            <input type="text" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button role="button" aria-label="Close modal" data-modal-close></button>
+            <input class="modal-close" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div class="modalOverlay" tabindex="-1"></div>
+    </div>
+
+    <div id="second" 
+      class="modal"
+      aria-modal="true"
+      aria-hidden="true"  
+      role="dialog" 
+      aria-labelledby="secondTitle"
+      aria-describedby="secondDesc"
+      data-modal="second">
+      <div class="modal-content">
+        <div id="secondTitle">
+          <h3>Second Modal</h3>
+        </div>
+        <div id="secondDesc" class="modal-container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus distinctio quas vel? Assumenda quae
+            architecto cupiditate, molestiae laudantium eos.
+          </p>
+          <input class="modal-close" type="button" value="OK" />
+        </div>
+      </div>
+      <div class="modalOverlay" tabindex="-1"></div>
+    </div>
+
+    <div id="third" 
+      class="modal"
+      aria-modal="true"
+      aria-hidden="true"  
+      role="dialog" 
+      aria-labelledby="thirdTitle"
+      aria-describedby="thirdDesc"
+      data-modal="third">
+      <div class="modal-content">
+        <button class="modal-close btn" name="third">&times;</button>
+        <div id="thirdTitlev">
+          <h3>Third Modal Title</h3>
+        </div>
+        <div id="thirdDesc" class="modal-container">
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        </div>
+      <div class="modalOverlay" tabindex="-1"></div>
+    </div>
+
+    <div id="fourth"
+      class="modal"
+      aria-modal="true"
+      aria-hidden="true"  
+      role="dialog"
+      aria-labelledby="fourthTitle"
+      aria-describedby="fourthDesc"
+      data-modal="fourth">
+      <div class="modal-content">
+        <div class="modal-top">
+          <button class="modal-close btn" name="fourth"> &times;</button>
+        </div>
+        <div id="fourthTitle">
+          <h3>fourth Modal</h3>
+        </div>
+        <div id="fourthDesc" class="modal-container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus distinctio quas vel? Assumenda quae
+            architecto cupiditate, molestiae laudantium eos.
+          </p>
+        </div>
+      </div>
+      <div class="modalOverlay" tabindex="-1"></div>
+    </div>
+  </div>
+  <script src="js/main.1.js"></script>
+</body>
+</html>
