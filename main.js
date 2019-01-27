@@ -1,11 +1,11 @@
 import '../styles/main.scss'
 
+const modals = [...document.querySelectorAll("[data-modal]")];
+const triggers = [...document.querySelectorAll("[data-trigger]")];
 const focusableList = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]'
-
 
 class Modal{
     contructor(id){
-        this.name = id
         this.id = id;
         this.modal = document.getElementById(id)
     }
@@ -36,10 +36,7 @@ class Modal{
       }   
 }
 
-const modals = [...document.querySelectorAll("[data-modal]")];
 modals.forEach((modal) => new Modal(modal.dataset['modal'])) 
-
-const triggers = [...document.querySelectorAll("[data-trigger]")];
 
 triggers.forEach((trigger) => {
    
